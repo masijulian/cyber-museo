@@ -3,7 +3,8 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/**/*.html"
+    "./public/**/*.html",
+    "./src/components/**/*.jsx"
   ],       // Si usas algún HTML en public// 
   presets: [],
   darkMode: 'media', // or 'class'
