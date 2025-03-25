@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import cases from "../data/cases";
 
 export default function CyberTimeline() {
+  const borderClasses = {
+    cyan: "border-cyber-cyan/20",
+    blue: "border-cyber-blue/20",
+    green: "border-cyber-green/20",
+  };
+
   return (
     <section className="mb-20">
       <h2 className="text-3xl font-bold text-cyber-cyan mb-12">
@@ -22,9 +28,7 @@ export default function CyberTimeline() {
           >
             <div
               className={`p-6 bg-cyber-dark border ${
-                index % 2 === 0
-                  ? "border-cyber-pink/20"
-                  : "border-cyber-cyan/20"
+                borderClasses[caseItem.color] || borderClasses.cyan // Default to cyan if color is not found
               } rounded-xl`}
             >
               <h3 className="text-xl font-semibold text-cyber-gray mb-2">
