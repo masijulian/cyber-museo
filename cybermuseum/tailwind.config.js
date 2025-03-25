@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
+    "../index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
     "./src/components/**/*.jsx"
@@ -164,6 +164,9 @@ export default {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'cyber-dark': '#0a192f',
+      'cyber-cyan': '#64ffda',
+      'cyber-gray': '#8892b0',
     }),
     columns: {
       auto: 'auto',
